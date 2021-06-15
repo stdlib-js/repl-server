@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/repl-server",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "REPL environment.",
   "license": "Apache-2.0",
   "author": {
