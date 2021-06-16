@@ -36,7 +36,7 @@ function namespace() {
 		},
 		{
 			'alias': 'boop',
-			'path': '@stdlib/foo/boop',
+			'path': '@stdlib/foo-boop',
 			'value': []
 		},
 		{
@@ -99,7 +99,7 @@ tape( 'the function resolves an alias to a package name (known value reference)'
 	alias2pkg( ns[ 1 ].value );
 
 	function log( str ) {
-		t.strictEqual( str, '@stdlib/foo/boop', 'logs expected value' );
+		t.strictEqual( str, '@stdlib/foo-boop', 'logs expected value' );
 		t.end();
 	}
 });
@@ -124,7 +124,7 @@ tape( 'if unable to resolve a package name, the function logs a message (alias)'
 
 	function log( str ) {
 		t.notEqual( str, '@stdlib/beep', 'logs a different string' );
-		t.notEqual( str, '@stdlib/foo/boop', 'logs a different string' );
+		t.notEqual( str, '@stdlib/foo-boop', 'logs a different string' );
 		t.end();
 	}
 });
@@ -149,7 +149,7 @@ tape( 'if unable to resolve a package name, the function logs a message (value; 
 
 	function log( str ) {
 		t.notEqual( str, '@stdlib/beep', 'logs a different string' );
-		t.notEqual( str, '@stdlib/foo/boop', 'logs a different string' );
+		t.notEqual( str, '@stdlib/foo-boop', 'logs a different string' );
 		t.end();
 	}
 });

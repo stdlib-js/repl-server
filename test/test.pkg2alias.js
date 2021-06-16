@@ -36,7 +36,7 @@ function namespace() {
 		},
 		{
 			'alias': 'boop',
-			'path': '@stdlib/foo/boop',
+			'path': '@stdlib/foo-boop',
 			'value': []
 		},
 		{
@@ -124,7 +124,7 @@ tape( 'the function resolves a package name to an alias', function test( t ) {
 		'./../console.js': mock
 	});
 
-	pkg2alias( '@stdlib/foo/boop' );
+	pkg2alias( '@stdlib/foo-boop' );
 
 	function log( str ) {
 		t.strictEqual( str, 'boop', 'logs expected value' );
