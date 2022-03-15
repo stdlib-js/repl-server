@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/repl-server",
-  "version": "0.0.9",
+  "version": "0.0.0",
   "description": "REPL environment.",
   "license": "Apache-2.0",
   "author": {
@@ -48,6 +48,7 @@
     "@stdlib/repl-help-data-data.json": "^0.0.x",
     "@stdlib/streams-node-stdin": "^0.0.x",
     "@stdlib/streams-node-stdout": "^0.0.x",
+    "@stdlib/string-format": "^0.0.x",
     "@stdlib/utils-deep-get": "^0.0.x",
     "@stdlib/utils-define-read-only-property": "^0.0.x",
     "@stdlib/utils-keys": "^0.0.x"
