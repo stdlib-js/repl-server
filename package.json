@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/repl-server",
-  "version": "0.0.0",
+  "version": "0.0.9",
   "description": "REPL environment.",
   "license": "Apache-2.0",
   "author": {
@@ -44,8 +44,8 @@
     "@stdlib/cli-ctor": "^0.0.x",
     "@stdlib/fs-read-file": "^0.0.x",
     "@stdlib/namespace": "^0.0.x",
-    "@stdlib/repl-code-blocks-data-data.json": "^0.0.x",
-    "@stdlib/repl-help-data-data.json": "^0.0.x",
+    "@stdlib/repl-code-blocks": "^0.0.x",
+    "@stdlib/repl-help": "^0.0.x",
     "@stdlib/streams-node-stdin": "^0.0.x",
     "@stdlib/streams-node-stdout": "^0.0.x",
     "@stdlib/string-format": "^0.0.x",
