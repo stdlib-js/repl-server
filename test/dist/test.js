@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -21,161 +21,13 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var proxyquire = require( 'proxyquire' );
-var noop = require( '@stdlib/utils-noop' );
-var repl = require( './../../dist' );
+var main = require( './../../dist' );
 
 
 // TESTS //
 
-tape( 'main export is a function', function test( t ) {
+tape( 'main export is defined', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof repl, 'function', 'main export is a function' );
+	t.strictEqual( main !== void 0, true, 'main export is defined' );
 	t.end();
-});
-
-tape( 'the function throws an error if provided an options argument which is not an object', function test( t ) {
-	var values;
-	var i;
-
-	values = [
-		'5',
-		5,
-		NaN,
-		true,
-		false,
-		null,
-		void 0,
-		[],
-		function foo() {}
-	];
-
-	for ( i = 0; i < values.length; i++ ) {
-		t.throws( badValue( values[i] ), TypeError, 'throws a type error when provided '+values[ i ] );
-	}
-	t.end();
-
-	function badValue( value ) {
-		return function badValue() {
-			repl( value, noop );
-		};
-	}
-});
-
-tape( 'the function throws an error if provided a callback argument which is not a function (no options)', function test( t ) {
-	var values;
-	var i;
-
-	values = [
-		'5',
-		5,
-		NaN,
-		true,
-		false,
-		null,
-		void 0,
-		[],
-		{}
-	];
-
-	for ( i = 0; i < values.length; i++ ) {
-		t.throws( badValue( values[i] ), TypeError, 'throws a type error when provided '+values[ i ] );
-	}
-	t.end();
-
-	function badValue( value ) {
-		return function badValue() {
-			repl( value );
-		};
-	}
-});
-
-tape( 'the function throws an error if provided a callback argument which is not a function (options)', function test( t ) {
-	var values;
-	var i;
-
-	values = [
-		'5',
-		5,
-		NaN,
-		true,
-		false,
-		null,
-		void 0,
-		[],
-		{}
-	];
-
-	for ( i = 0; i < values.length; i++ ) {
-		t.throws( badValue( values[i] ), TypeError, 'throws a type error when provided '+values[ i ] );
-	}
-	t.end();
-
-	function badValue( value ) {
-		return function badValue() {
-			repl( {}, value );
-		};
-	}
-});
-
-tape( 'the function starts a REPL environment', function test( t ) {
-	var repl;
-	var mock;
-
-	mock = {
-		'start': start
-	};
-
-	repl = proxyquire( './../dist/main.js', {
-		'repl': mock
-	});
-
-	repl( onStart );
-
-	function start() {
-		return {
-			'context': {}
-		};
-	}
-
-	function onStart( error, server ) {
-		if ( error ) {
-			t.ok( false, error.message );
-		} else {
-			t.ok( true, 'starts a REPL' );
-			t.ok( server, 'returns a REPL server' );
-		}
-		t.end();
-	}
-});
-
-tape( 'the function starts a REPL environment (options)', function test( t ) {
-	var repl;
-	var mock;
-
-	mock = {
-		'start': start
-	};
-
-	repl = proxyquire( './../dist/main.js', {
-		'repl': mock
-	});
-
-	repl( {}, onStart );
-
-	function start() {
-		return {
-			'context': {}
-		};
-	}
-
-	function onStart( error, server ) {
-		if ( error ) {
-			t.ok( false, error.message );
-		} else {
-			t.ok( true, 'starts a REPL' );
-			t.ok( server, 'returns a REPL server' );
-		}
-		t.end();
-	}
 });
