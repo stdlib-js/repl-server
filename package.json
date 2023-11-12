@@ -43,7 +43,7 @@
     "@stdlib/assert-is-plain-object": "^0.1.1",
     "@stdlib/cli-ctor": "^0.1.1",
     "@stdlib/fs-read-file": "^0.1.1",
-    "@stdlib/namespace": "^0.0.12",
+    "@stdlib/namespace": "^0.1.1",
     "@stdlib/repl-code-blocks": "^0.2.1",
     "@stdlib/repl-help": "^0.1.1",
     "@stdlib/streams-node-stdin": "^0.1.1",
