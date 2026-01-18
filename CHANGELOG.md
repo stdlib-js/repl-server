@@ -4,7 +4,17 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-09-15)
+## Unreleased (2026-01-18)
+
+<section class="bug-fixes">
+
+### Bug Fixes
+
+-   [`ef082b9`](https://github.com/stdlib-js/stdlib/commit/ef082b94577dd75dcbd855e795bf22cf87cecf5e) - update require to new location
+
+</section>
+
+<!-- /.bug-fixes -->
 
 <section class="commits">
 
@@ -12,6 +22,7 @@
 
 <details>
 
+-   [`ef082b9`](https://github.com/stdlib-js/stdlib/commit/ef082b94577dd75dcbd855e795bf22cf87cecf5e) - **fix:** update require to new location _(by Philipp Burckhardt)_
 -   [`07f7c05`](https://github.com/stdlib-js/stdlib/commit/07f7c0522c73e6ad9505e1d45035ae439344200d) - **test:** use standardized assertion messages and fix lint errors _(by Philipp Burckhardt)_
 
 </details>
