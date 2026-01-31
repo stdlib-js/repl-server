@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/repl-server",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "REPL environment.",
   "license": "Apache-2.0",
   "author": {
@@ -44,9 +44,9 @@
     "@stdlib/cli-ctor": "^0.2.2",
     "@stdlib/fs-read-file": "^0.2.2",
     "@stdlib/namespace": "^0.3.3",
-    "@stdlib/object-deep-get": "github:stdlib-js/object-deep-get#main",
-    "@stdlib/repl-code-blocks": "^0.4.0",
-    "@stdlib/repl-help": "^0.3.0",
+    "@stdlib/object-deep-get": "^0.1.0",
+    "@stdlib/repl-code-blocks": "^0.5.0",
+    "@stdlib/repl-help": "^0.4.0",
     "@stdlib/streams-node-stdin": "^0.2.2",
     "@stdlib/streams-node-stdout": "^0.2.2",
     "@stdlib/string-format": "^0.2.2",
@@ -58,7 +58,7 @@
     "@stdlib/assert-is-browser": "^0.2.2",
     "@stdlib/assert-is-string": "^0.2.2",
     "@stdlib/assert-is-windows": "^0.2.2",
-    "@stdlib/object-deep-set": "github:stdlib-js/object-deep-set#main",
+    "@stdlib/object-deep-set": "^0.1.0",
     "@stdlib/process-exec-path": "^0.2.2",
     "@stdlib/utils-noop": "^0.2.2",
     "proxyquire": "^2.0.0",
@@ -94,11 +94,6 @@
     "shell",
     "server"
   ],
-  "__stdlib__": {
-    "envs": {
-      "browser": false
-    }
-  },
   "funding": {
     "type": "opencollective",
     "url": "https://opencollective.com/stdlib"
